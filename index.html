@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sculpting &amp; Wine at Hello Josephine | BLW. Studio</title>
-<meta name="description" content="Sculpting & Wine at Hello Josephine, Beckenham. Thursday 22 October, a guided, unhurried evening of clay and wine inspired by Yayoi Kusama's pumpkins. No experience needed. Only 20 places.">
+<title>Clay &amp; Calligraphy Christmas at Hello Josephine | BLW. Studio</title>
+<meta name="description" content="A festive evening of clay, calligraphy and wine at Hello Josephine, Beckenham. Thursday 19 November. Hand-build a decoration for the tree and letter your own place cards. No experience needed. Only 20 places.">
 <link rel="canonical" href="https://sculptingandwine.com">
-<meta property="og:title" content="Sculpting &amp; Wine at Hello Josephine | BLW. Studio">
-<meta property="og:description" content="Thursday 22 October in Beckenham. A guided, unhurried evening of clay and wine, inspired by Yayoi Kusama's pumpkins. No experience needed. Only 20 places.">
+<meta property="og:title" content="Clay &amp; Calligraphy Christmas | BLW. Studio">
+<meta property="og:description" content="Thursday 19 November in Beckenham. A festive evening of clay, calligraphy and wine. Make a decoration for the tree and letter your place cards. Only 20 places.">
 <meta property="og:url" content="https://sculptingandwine.com">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://sculptingandwine.com/hands-clay.jpg">
@@ -17,26 +17,17 @@
 <meta property="og:image:height" content="1050">
 <meta property="og:image:alt" content="Close-up of hands shaping clay at a BLW. Studio workshop">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sculpting &amp; Wine at Hello Josephine | BLW. Studio">
-<meta name="twitter:description" content="Thursday 22 October in Beckenham. A guided, unhurried evening of clay and wine, inspired by Yayoi Kusama's pumpkins. No experience needed. Only 20 places.">
+<meta name="twitter:title" content="Clay &amp; Calligraphy Christmas | BLW. Studio">
+<meta name="twitter:description" content="Thursday 19 November in Beckenham. A festive evening of clay, calligraphy and wine. Only 20 places.">
 <meta name="twitter:image" content="https://sculptingandwine.com/hands-clay.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --porcelain:#fbf6f2;   /* primary background */
-  --plaster:#f1e5df;     /* soft plaster pink surface */
-  --rose:#c99b94;        /* dusty rose, primary accent */
-  --rose-stone:#b79d9c;  /* rose stone, depth / panels */
-  --plum:#2f1f24;        /* deepest tone, dark sections + headings */
-  --ink:#3a2a2e;         /* body text */
-  --pink:#ec1380;        /* signature hot pink accent */
-  --pink-dark:#c70f6a;
-  --eyebrow:#9c8d80;     /* muted stone eyebrows */
-  --line:#e6d8d1;        /* soft rose hairline */
-  --muted:#8a7b7c;       /* captions */
-  --max:1180px;
+  --porcelain:#fbf6f2;--plaster:#f1e5df;--rose:#c99b94;--rose-stone:#b79d9c;
+  --plum:#2f1f24;--ink:#3a2a2e;--pink:#ec1380;--pink-dark:#c70f6a;
+  --eyebrow:#9c8d80;--line:#e6d8d1;--muted:#8a7b7c;--max:1180px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -48,8 +39,8 @@ a{color:inherit;text-decoration:none}
 .bw{filter:grayscale(100%) contrast(1.02)}
 .eyebrow{font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--eyebrow);font-weight:500;display:inline-flex;align-items:center;gap:12px}
 .eyebrow .idx{font-family:'Cormorant',serif;font-style:italic;font-size:1rem;letter-spacing:0;color:var(--rose);opacity:.9;font-weight:400}
-
-/* NAV */
+.dot-pink{color:var(--pink)}
+h1 .dot-pink,h2 .dot-pink,.giant .dot-pink{font-style:normal}
 header{position:sticky;top:0;z-index:50;background:rgba(251,246,242,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .logo{font-family:'Cormorant',serif;font-size:1.5rem;font-weight:500;letter-spacing:.02em}
@@ -62,20 +53,11 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .btn.pink{background:var(--pink);color:#fff}
 .btn.pink:hover{background:var(--pink-dark);color:#fff}
 .nav-cta{display:flex;gap:14px;align-items:center}
-/* hot-pink full stop on headings + accents */
-.dot-pink{color:var(--pink)}
-h1 .dot-pink,h2 .dot-pink,.giant .dot-pink{font-style:normal}
-/* Kusama-style scattered hot-pink dots */
-.dotfield{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.5;
-  background-image:radial-gradient(var(--pink) 2px,transparent 2.5px);
-  background-size:34px 34px}
 .status{display:flex;align-items:center;gap:8px;font-family:'Jost',sans-serif;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-right:6px}
 .status .dot{width:7px;height:7px;border-radius:50%;background:var(--rose);position:relative}
 .status .dot::after{content:"";position:absolute;inset:-5px;border-radius:50%;background:var(--rose);opacity:.5;animation:pulse 2.2s ease-out infinite}
 @keyframes pulse{0%{transform:scale(.6);opacity:.5}100%{transform:scale(2.2);opacity:0}}
 @media(max-width:680px){.status{display:none}}
-
-/* HERO */
 .hero{position:relative;background:var(--plaster);padding:96px 0 108px;overflow:hidden}
 .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
 .hero h1{font-size:clamp(3.2rem,7vw,5.8rem);margin:.16em 0 .34em;font-weight:300}
@@ -85,24 +67,21 @@ h1 .dot-pink,h2 .dot-pink,.giant .dot-pink{font-style:normal}
 .hero-meta{margin-top:2.2em;display:flex;flex-wrap:wrap;gap:10px}
 .chip{font-family:'Jost',sans-serif;font-size:.8rem;letter-spacing:.02em;background:var(--porcelain);border:1px solid var(--line);color:var(--ink);padding:9px 16px;border-radius:30px;font-weight:300}
 .chip b{font-weight:500;color:var(--plum)}
-.hero-art{position:relative;transform:translateX(-0.25cm)}
+.hero-art{position:relative}
 .hero-art .frame{border-radius:300px 300px 16px 16px;aspect-ratio:4/5;overflow:hidden;box-shadow:0 34px 66px -30px rgba(47,31,36,.5);background:var(--rose-stone)}
 .hero-art .frame img{width:100%;height:100%;object-fit:cover}
-.hero-art .badge{position:absolute;bottom:-20px;left:-20px;background:var(--plum);color:var(--porcelain);font-family:'Cormorant',serif;font-style:italic;font-size:1.05rem;padding:18px;border-radius:50%;width:132px;height:132px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.25;box-shadow:0 16px 34px -14px rgba(47,31,36,.5)}
-
-/* marquee strip */
+.hero-art .badge{position:absolute;bottom:-20px;left:-20px;background:var(--plum);color:var(--porcelain);font-family:'Cormorant',serif;font-style:italic;font-size:1.05rem;padding:18px;border-radius:50%;width:132px;height:132px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.25;box-shadow:0 16px 34px -14px rgba(47,31,36,.5);z-index:2}
+.hero-art .inset{position:absolute;right:-14px;bottom:-14px;width:46%;aspect-ratio:1/1;border-radius:14px;overflow:hidden;border:5px solid var(--plaster);box-shadow:0 20px 40px -16px rgba(47,31,36,.6);z-index:2}
+.hero-art .inset img{width:100%;height:100%;object-fit:cover}
 .strip{background:var(--plum);color:var(--plaster);padding:16px 0;overflow:hidden;white-space:nowrap}
 .strip .track{display:inline-block;animation:scroll 30s linear infinite}
 .strip span{font-family:'Cormorant',serif;font-style:italic;font-size:1.3rem;margin:0 28px;opacity:.92}
 .strip span::after{content:"✦";color:var(--pink);margin-left:56px;font-style:normal;font-size:.9rem;vertical-align:middle}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
 section{padding:108px 0;position:relative;z-index:2}
 .section-head{max-width:60ch}
 .section-head h2{font-size:clamp(2.3rem,4.8vw,3.6rem);margin:.28em 0 .5em;font-weight:300}
 .lead{font-size:1.12rem;color:var(--muted);font-weight:300}
-
-/* THE EVENING */
 .evening{background:var(--porcelain)}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px}
 .step{background:var(--plaster);border:1px solid var(--line);border-radius:18px;padding:38px 32px;transition:transform .35s,box-shadow .35s}
@@ -110,8 +89,6 @@ section{padding:108px 0;position:relative;z-index:2}
 .step .num{font-family:'Cormorant',serif;font-style:italic;font-size:2.6rem;color:var(--rose);margin-bottom:.15em;font-weight:400}
 .step h3{font-size:1.7rem;margin-bottom:.35em;font-weight:400}
 .step p{color:var(--muted);font-size:1rem}
-
-/* DATES */
 .dates{background:var(--plaster)}
 .datecards{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:52px}
 .datecard{background:var(--porcelain);border:1px solid var(--line);border-radius:20px;padding:40px 38px;display:flex;flex-direction:column}
@@ -126,8 +103,7 @@ section{padding:108px 0;position:relative;z-index:2}
 .datecard .meta li span:last-child{font-weight:400;color:var(--plum);text-align:right}
 .datecard .foot{margin-top:auto}
 .datecard .soon{font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:30px;padding:13px 26px;display:inline-block}
-.datecard.dark{background:var(--plum);border-color:var(--plum);color:var(--plaster);position:relative;overflow:hidden}
-.datecard.dark>*{position:relative;z-index:1}
+.datecard.dark{background:var(--plum);border-color:var(--plum);color:var(--plaster)}
 .datecard.dark .when{color:var(--rose-stone)}
 .datecard.dark h3{color:var(--porcelain)}
 .datecard.dark .theme{color:var(--rose)}
@@ -136,24 +112,18 @@ section{padding:108px 0;position:relative;z-index:2}
 .datecard.dark .meta li span:first-child{color:var(--rose-stone)}
 .datecard.dark .meta li span:last-child{color:#fff}
 .datecard.dark .soon{color:var(--plaster);border-color:rgba(241,229,223,.34)}
-.datecard.dark .dotfield{opacity:.28}
-
-/* PHILOSOPHY */
-.philosophy{background:var(--porcelain)}
-.philosophy .cols{display:grid;grid-template-columns:1.1fr .9fr;gap:66px;align-items:center}
-.philosophy p{margin-bottom:1.05em;font-size:1.08rem}
-.philo-img{border-radius:220px 220px 16px 16px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 58px -32px rgba(47,31,36,.5)}
-.philo-img img{width:100%;height:100%;object-fit:cover}
-
-/* FOR YOU */
+.twocol{display:grid;grid-template-columns:1.1fr .9fr;gap:66px;align-items:center}
+.twocol.flip{grid-template-columns:.9fr 1.1fr}
+.twocol p{margin-bottom:1.05em;font-size:1.08rem}
+.img-arch{border-radius:220px 220px 16px 16px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 58px -32px rgba(47,31,36,.5)}
+.img-soft{border-radius:16px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 58px -32px rgba(47,31,36,.5)}
+.img-arch img,.img-soft img{width:100%;height:100%;object-fit:cover}
 .foryou{background:var(--plaster)}
 .foryou .cols{display:grid;grid-template-columns:1fr 1fr;gap:52px}
 .tick{list-style:none;margin-top:18px}
 .tick li{position:relative;padding-left:34px;margin-bottom:16px;font-size:1.06rem}
 .tick li::before{content:"";position:absolute;left:0;top:9px;width:14px;height:14px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 4px rgba(201,155,148,.2)}
 .no li::before{background:var(--rose-stone);box-shadow:0 0 0 4px rgba(183,157,156,.18)}
-
-/* TESTIMONIALS */
 .testi{background:var(--plum);color:var(--plaster)}
 .testi h2{color:var(--porcelain)}
 .testi .eyebrow{color:var(--rose)}
@@ -163,8 +133,6 @@ section{padding:108px 0;position:relative;z-index:2}
 .quote p{font-family:'Cormorant',serif;font-size:1.35rem;line-height:1.45;margin-bottom:1.1em;color:var(--porcelain);font-weight:400}
 .quote .who{font-family:'Jost',sans-serif;font-size:.74rem;letter-spacing:.1em;color:var(--rose-stone);text-transform:uppercase}
 .stars{color:var(--rose);letter-spacing:4px;margin-bottom:1em;font-size:.9rem}
-
-/* VENUE */
 .venue{background:var(--porcelain)}
 .venue .cols{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
 .venue .frame{aspect-ratio:4/5;border-radius:16px;overflow:hidden;box-shadow:0 30px 58px -32px rgba(47,31,36,.5)}
@@ -173,23 +141,17 @@ section{padding:108px 0;position:relative;z-index:2}
 .venue ul li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;font-size:1.02rem}
 .venue ul li span:first-child{color:var(--muted)}
 .venue ul li span:last-child{font-weight:400;text-align:right;color:var(--plum)}
-
-/* OVERSIZED TYPE MOMENT */
 .bigtype{background:var(--plaster);padding:128px 0;text-align:center;position:relative;overflow:hidden}
 .bigtype .wrap{position:relative;z-index:1}
 .giant{font-size:clamp(3.2rem,11vw,9rem);line-height:.98;letter-spacing:-.01em;color:var(--plum);font-weight:300}
 .giant em{font-style:italic;font-weight:400;color:var(--pink)}
 @media(max-width:680px){.bigtype{padding:78px 0}}
-
-/* CTA BAND */
 .cta-band{background:var(--plum);color:var(--porcelain);text-align:center}
 .cta-band h2{color:var(--porcelain);font-size:clamp(2.4rem,5vw,3.8rem);margin-bottom:.3em;font-weight:300}
 .cta-band p{font-size:1.15rem;max-width:48ch;margin:0 auto 1.9em;opacity:.9;font-weight:300}
 .cta-band .btn{background:var(--porcelain);color:var(--plum)}
 .cta-band .btn:hover{background:var(--rose);color:var(--porcelain)}
 .scarcity{margin-top:1.5em;font-size:.85rem;letter-spacing:.06em;opacity:.7}
-
-/* FAQ */
 .faq{background:var(--porcelain)}
 .acc{max-width:800px;margin:50px auto 0}
 .acc details{border-bottom:1px solid var(--line);padding:8px 0}
@@ -198,27 +160,22 @@ section{padding:108px 0;position:relative;z-index:2}
 .acc summary::after{content:"+";font-family:'Jost';font-size:1.4rem;color:var(--rose);transition:transform .25s;font-weight:300}
 .acc details[open] summary::after{transform:rotate(45deg)}
 .acc details p{padding:0 0 22px;color:var(--muted);max-width:66ch}
-
-/* SIGNUP */
 .signup{background:var(--plaster)}
 .form-card{max-width:640px;margin:0 auto;background:var(--porcelain);border:1px solid var(--line);border-radius:22px;padding:52px 46px;box-shadow:0 32px 62px -36px rgba(47,31,36,.45);text-align:center}
 .form-card h2{font-size:2.4rem;margin-bottom:.25em;font-weight:300}
 .form-card .lead{margin-bottom:1.8em;font-size:1.05rem}
 .formnote{font-size:.82rem;color:var(--muted);margin-top:16px}
-
-/* FOOTER */
 footer{background:var(--plum);color:var(--plaster);padding:64px 0 42px;text-align:center}
 footer .logo{color:var(--porcelain);font-size:1.7rem;margin-bottom:.4em}
 footer p{color:var(--rose-stone);font-size:.9rem;margin-bottom:.5em;font-weight:300}
 footer a{color:var(--rose);font-weight:400}
-
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
 .reveal.in{opacity:1;transform:none}
-
 @media(max-width:880px){
-  .hero .wrap,.philosophy .cols,.foryou .cols,.venue .cols{grid-template-columns:1fr!important;gap:44px}
+  .hero .wrap,.twocol,.twocol.flip,.foryou .cols,.venue .cols{grid-template-columns:1fr!important;gap:44px}
   .steps,.tgrid,.datecards{grid-template-columns:1fr}
   .hero-art{order:-1;max-width:400px}
+  .twocol .imgwrap{order:-1}
   section{padding:78px 0}
   .nav-cta .ghost{display:none}
   .form-card{padding:38px 26px}
@@ -232,9 +189,9 @@ footer a{color:var(--rose);font-weight:400}
     <nav>
       <div class="logo">BLW<b>.</b> Studio</div>
       <div class="nav-cta">
-        <span class="status"><span class="dot"></span>Booking now · 22 Oct</span>
-        <a href="#dates" class="btn ghost">The dates</a>
-        <a href="https://buytickets.at/blwstudioltd/2418815" target="_blank" rel="noopener" class="btn pink">Book your ticket</a>
+        <span class="status"><span class="dot"></span>Booking now · 19 Nov</span>
+        <a href="#details" class="btn ghost">The details</a>
+        <a href="https://www.tickettailor.com/events/blwstudioltd/2482058" target="_blank" rel="noopener" class="btn pink">Book your ticket</a>
       </div>
     </nav>
   </div>
@@ -244,271 +201,217 @@ footer a{color:var(--rose);font-weight:400}
 <section class="hero">
   <div class="wrap">
     <div class="reveal in">
-      <p class="eyebrow">Sculpting &amp; Wine · Hello Josephine, Beckenham</p>
-      <h1>Slow down with <span class="pop">Sculpting &amp; Wine.</span></h1>
-      <p class="lead">A guided, unhurried evening of clay and wine, inspired by the pumpkins of Yayoi Kusama. Join ceramicist Beth Lloyd-Wright to make something with your hands. No experience needed.</p>
+      <p class="eyebrow">Clay &amp; Calligraphy Christmas · Hello Josephine, Beckenham</p>
+      <h1>Put down your phone<span class="dot-pink">.</span><br>Pick up a <span class="pop">pen.</span></h1>
+      <p class="lead">A festive evening of clay, calligraphy and wine. Hand-build a decoration for your tree and letter your own place cards for the table. No experience needed.</p>
       <div class="hero-cta">
-        <a href="https://buytickets.at/blwstudioltd/2418815" target="_blank" rel="noopener" class="btn big">Book your ticket</a>
+        <a href="https://www.tickettailor.com/events/blwstudioltd/2482058" target="_blank" rel="noopener" class="btn big">Book your ticket</a>
         <a href="#evening" class="btn ghost">See the evening</a>
       </div>
       <div class="hero-meta">
         <span class="chip">📍 Hello Josephine, Beckenham</span>
-        <span class="chip">🗓️ <b>Thu 22 October 2026</b></span>
+        <span class="chip">🗓️ <b>Thu 19 November 2026</b></span>
         <span class="chip">🍷 Just <b>20 places</b></span>
-        <span class="chip">💷 <b>£49pp</b> (+£1 booking fee)</span>
+        <span class="chip">💷 <b>£59pp</b> (+£1 booking fee)</span>
       </div>
     </div>
     <div class="hero-art reveal in">
-      <div class="frame">
-        <img class="bw" src="hero-pumpkin.jpg" alt="A hand-built clay pumpkin with dotted, pierced surface, inspired by Yayoi Kusama">
-      </div>
-      <div class="badge">An evening<br>that's yours</div>
+      <div class="frame"><img class="bw" src="hero-christmas.jpg" alt="Hand-built ceramic Christmas decorations hanging from a branch on blush ribbon"></div>
+      <div class="badge">Handmade<br>for the tree</div>
+      <div class="inset"><img class="bw" src="calligraphy.jpg" alt="Calligrapher Tianna Ellis lettering by hand with a dip pen"></div>
     </div>
   </div>
 </section>
 
 <!-- MARQUEE -->
-<div class="strip">
-  <div class="track">
-    <span>Slow down</span><span>Get creative</span><span>Connect</span><span>No experience needed</span><span>Wine in hand</span><span>Slow down</span><span>Get creative</span><span>Connect</span><span>No experience needed</span><span>Wine in hand</span>
-  </div>
-</div>
+<div class="strip"><div class="track">
+  <span>Slow down</span><span>Shape the clay</span><span>Letter by hand</span><span>Make for the tree</span><span>Wine in hand</span><span>Slow down</span><span>Shape the clay</span><span>Letter by hand</span><span>Make for the tree</span><span>Wine in hand</span>
+</div></div>
 
 <!-- THE EVENING -->
 <section class="evening" id="evening">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow"><span class="idx">01</span> How the evening flows</p>
-      <h2>Two hours of creative practice to reset your nervous system<span class="dot-pink">.</span></h2>
+      <h2>Two hours to slow down and make something by hand<span class="dot-pink">.</span></h2>
       <p class="lead">Small, warm and completely beginner-friendly. Here is how it goes.</p>
     </div>
     <div class="steps">
-      <div class="step reveal">
-        <div class="num">01</div>
-        <h3>Arrive &amp; pour</h3>
-        <p>Settle in at Hello Josephine with a glass of wine and meet the group. No rush, no awkwardness, just a relaxed welcome.</p>
-      </div>
-      <div class="step reveal">
-        <div class="num">02</div>
-        <h3>Hands in clay</h3>
-        <p>Beth will guide you step by step through hand-building your own piece. Cool, tactile, entirely analogue and genuinely calming.</p>
-      </div>
-      <div class="step reveal">
-        <div class="num">03</div>
-        <h3>Take it home</h3>
-        <p>We work in air-dry clay, so there is no kiln and no long wait. Leave with your piece in hand the same evening, plus a clearer head and maybe a few new friends.</p>
-      </div>
+      <div class="step reveal"><div class="num">01</div><h3>Arrive &amp; pour</h3><p>Settle in at Hello Josephine with a glass of wine and meet the group. No rush, no awkwardness, just a relaxed welcome.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3>Letter your cards</h3><p>First, a gentle introduction to calligraphy with Tianna: how to hold the pen and build each letter. Letter your own place cards for the festive table.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3>Shape your clay</h3><p>Then hand-build a decoration for the tree in air-dry clay, and if you like, letter it with the technique you have just learned. Everything comes home the same evening.</p></div>
     </div>
   </div>
+</section>
+
+<!-- WHAT YOU'LL MAKE -->
+<section style="background:var(--porcelain)">
+  <div class="wrap"><div class="twocol">
+    <div class="reveal">
+      <p class="eyebrow"><span class="idx">02</span> What you'll make</p>
+      <h2 style="font-size:clamp(2.2rem,4.6vw,3.2rem);margin:.2em 0 .55em;font-weight:300">A decoration for the tree, cards for the table<span class="dot-pink">.</span></h2>
+      <p>Two keepsakes to take home from one evening. First, a hand-built clay decoration to hang on your tree, uniquely yours and made to last beyond this Christmas.</p>
+      <p>Then your own place cards, lettered by hand, to set a table that feels considered and personal. A lovely way to begin the festive season, and everything is provided.</p>
+    </div>
+    <div class="reveal imgwrap"><div class="img-arch"><img class="bw" src="place-cards.jpg" alt="Calligraphy place name cards lettered by hand"></div></div>
+  </div></div>
 </section>
 
 <!-- DATES -->
 <section class="dates" id="dates">
   <div class="wrap">
     <div class="section-head reveal">
-      <p class="eyebrow"><span class="idx">02</span> Upcoming evenings</p>
-      <h2>Two dates to slow down this autumn<span class="dot-pink">.</span></h2>
-      <p class="lead">Each evening is 7 to 9pm at Hello Josephine, Beckenham. Just 20 places.</p>
+      <p class="eyebrow"><span class="idx">03</span> Festive evenings</p>
+      <h2>Two dates this season<span class="dot-pink">.</span></h2>
+      <p class="lead">Our own Clay &amp; Calligraphy evening, plus a Muse afternoon where Beth is guiding the clay.</p>
     </div>
     <div class="datecards">
-      <div class="datecard reveal">
-        <div class="when">Thursday 22 October 2026</div>
-        <h3>Sculpting &amp; <em>Wine</em></h3>
-        <div class="theme">Inspired by Yayoi Kusama's pumpkins</div>
-        <p>Hand-build your own sculptural pumpkin, playful, dotted and entirely your own, with a glass of wine and good company alongside.</p>
-        <ul class="meta">
-          <li><span>Time</span><span>7 to 9pm</span></li>
-          <li><span>Places</span><span>Limited to 20</span></li>
-          <li><span>Price</span><span>£49pp (+£1 booking fee)</span></li>
-          <li><span>Includes</span><span>All materials &amp; a glass of wine</span></li>
-        </ul>
-        <div class="foot">
-          <a href="https://buytickets.at/blwstudioltd/2418815" target="_blank" rel="noopener" class="btn big">Book your ticket</a>
-        </div>
-      </div>
       <div class="datecard dark reveal">
         <div class="when">Thursday 19 November 2026</div>
-        <h3>Christmas <em>Special</em></h3>
-        <div class="theme">Clay &amp; calligraphy, a festive evening</div>
-        <p>A festive evening that pairs clay with a calligraphy element, make a hand-built piece for the tree as well as name cards for your table. A lovely way to begin the season.</p>
+        <h3>Clay &amp; Calligraphy <em>Christmas</em></h3>
+        <div class="theme">A decoration for the tree, cards for the table</div>
+        <p>Our own festive evening at Hello Josephine, Beckenham. Clay, calligraphy and a glass of wine, hosted by Beth.</p>
         <ul class="meta">
+          <li><span>Venue</span><span>Hello Josephine, Beckenham</span></li>
           <li><span>Time</span><span>7 to 9pm</span></li>
           <li><span>Places</span><span>Limited to 20</span></li>
-          <li><span>Includes</span><span>Clay, calligraphy &amp; a glass of wine</span></li>
+          <li><span>Price</span><span>£59pp (+£1 booking fee)</span></li>
         </ul>
-        <div class="foot">
-          <span class="soon">Booking opens soon</span>
-        </div>
+        <div class="foot"><a href="https://www.tickettailor.com/events/blwstudioltd/2482058" target="_blank" rel="noopener" class="btn big pink">Book your ticket</a></div>
+      </div>
+      <div class="datecard reveal">
+        <div class="when">Saturday 28 November 2026</div>
+        <h3>A Handmade <em>Christmas</em></h3>
+        <div class="theme">A festive clay afternoon with Muse</div>
+        <p>A cosy ornament-making afternoon hosted by Muse, with Beth guiding the clay. A separate event, booked through Muse.</p>
+        <ul class="meta">
+          <li><span>Host</span><span>Muse, Beth guiding</span></li>
+          <li><span>Time</span><span>3 to 5pm</span></li>
+          <li><span>Price</span><span>£45pp</span></li>
+        </ul>
+        <div class="foot"><a href="https://www.tickettailor.com/events/musebymills/2475941" target="_blank" rel="noopener" class="btn big">Find out more</a></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PHILOSOPHY -->
-<section class="philosophy">
-  <div class="wrap">
-    <div class="cols">
-      <div class="reveal">
-        <p class="eyebrow"><span class="idx">03</span> Why clay</p>
-        <h2 style="font-size:clamp(2.2rem,4.6vw,3.3rem);margin:.2em 0 .55em;font-weight:300">Clay is the antithesis of a digital world<span class="dot-pink">.</span></h2>
-        <p>We spend our days pinged, scrolled and notified. Always reachable, rarely present, living in our heads and our devices, moving at speed, rarely stopping long enough to feel our own hands.</p>
-        <p>Working with clay asks the opposite of us. To slow down. To be present. There is no screen, no notifications, no rush. Just you, your hands, and something being made from nothing.</p>
-        <p>These evenings are not about perfect technique or finished products. They are about the quiet, restorative act of making, with a glass of wine and good company alongside.</p>
-      </div>
-      <div class="reveal">
-        <div class="philo-img"><img class="bw" src="hands-clay.jpg" alt="Close-up of hands shaping clay at a Sculpting & Wine workshop"></div>
-      </div>
+<!-- COLLABORATION -->
+<section style="background:var(--porcelain)">
+  <div class="wrap"><div class="twocol flip">
+    <div class="reveal imgwrap"><div class="img-soft"><img class="bw" src="millie-beth.jpg" alt="Beth Lloyd-Wright with calligrapher Tianna Ellis"></div></div>
+    <div class="reveal">
+      <p class="eyebrow"><span class="idx">04</span> In good company</p>
+      <h2 style="font-size:clamp(2.2rem,4.4vw,2.9rem);margin:.2em 0 .4em;font-weight:300">With calligrapher Tianna Ellis<span class="dot-pink">.</span></h2>
+      <p>For the evening, Beth is joined by calligrapher Tianna Ellis of Tia Ellis Designs. She will show you the basics: how to hold the pen, how each letter is built, and how to slow down enough to enjoy it.</p>
+      <p>Tianna has practised calligraphy and lettering for eight years, now creating bespoke work for weddings and events. Together you will shape your decorations and letter your cards.</p>
+      <a href="https://www.tickettailor.com/events/blwstudioltd/2482058" target="_blank" rel="noopener" class="btn ghost" style="margin-top:8px">Book your ticket</a>
     </div>
-  </div>
+  </div></div>
 </section>
 
-<!-- FOR YOU -->
-<section class="foryou">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow"><span class="idx">04</span> Is this for me?</p>
-      <h2>For women and mothers who need an evening to call their own<span class="dot-pink">.</span></h2>
+<!-- WHY -->
+<section style="background:var(--plaster)">
+  <div class="wrap"><div class="twocol">
+    <div class="reveal">
+      <p class="eyebrow"><span class="idx">05</span> Why clay &amp; calligraphy</p>
+      <h2 style="font-size:clamp(2.2rem,4.6vw,3.3rem);margin:.2em 0 .55em;font-weight:300">The antithesis of a digital world<span class="dot-pink">.</span></h2>
+      <p>We spend our days pinged, scrolled and notified. Always reachable, rarely present, rarely stopping long enough to feel our own hands.</p>
+      <p>Clay and calligraphy ask the opposite of us. To slow down. To be present. Both are cool, tactile and entirely analogue, the gentle rhythm of shaping and of a nib moving across paper.</p>
+      <p>These evenings are not about perfect technique. They are about the quiet, restorative act of making, with a glass of wine and good company alongside.</p>
     </div>
-    <div class="cols" style="margin-top:32px">
-      <div class="reveal">
-        <h3 style="font-size:1.7rem;margin-bottom:.2em;font-weight:400">This is for you if…</h3>
-        <ul class="tick">
-          <li>You would love a creative night out that is not just another dinner or drinks.</li>
-          <li>You want some time for yourself, to slow down and switch off the screen.</li>
-          <li>You are a total beginner and want a relaxed, no-judgement space to try clay.</li>
-          <li>You are looking for a lovely thing to do with friends, or a way to meet new people.</li>
-        </ul>
-      </div>
-      <div class="reveal">
-        <h3 style="font-size:1.7rem;margin-bottom:.2em;font-weight:400">You do not need…</h3>
-        <ul class="tick no">
-          <li>Any previous experience, none at all.</li>
-          <li>To bring anything. All materials and guidance are provided.</li>
-          <li>To be "arty". If you can hold a glass of wine, you can do this.</li>
-          <li>To worry about mess. That is half the fun.</li>
-        </ul>
-      </div>
-    </div>
-    <p class="reveal" style="margin-top:42px;font-size:.9rem;color:var(--muted);max-width:70ch">We design these evenings for mothers and women, but all genders are very welcome to our evening class.</p>
-  </div>
+    <div class="reveal imgwrap"><div class="img-arch"><img class="bw" src="workshop-group.jpg" alt="A group making clay pieces together at a BLW. Studio workshop"></div></div>
+  </div></div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section class="testi">
   <div class="wrap">
     <div class="section-head reveal">
-      <p class="eyebrow"><span class="idx">05</span> From past workshops</p>
+      <p class="eyebrow"><span class="idx">06</span> From past workshops</p>
       <h2>People come for the clay. They leave with more<span class="dot-pink">.</span></h2>
     </div>
     <div class="tgrid">
-      <div class="quote reveal">
-        <div class="stars">★★★★★</div>
-        <p>"The inspiration of basing the session around an artist, the bonding and empowerment that the theme provided to a group of women meeting for the first time, the joy and enthusiasm conveyed via Beth's teaching style."</p>
-        <div class="who">Participant · BLW. Studio Workshop</div>
-      </div>
-      <div class="quote reveal">
-        <div class="stars">★★★★★</div>
-        <p>"The workshop felt very relaxing with a really nice atmosphere, nice to have drinks included, fun to try something new."</p>
-        <div class="who">Participant · Sculpting &amp; Wine</div>
-      </div>
-      <div class="quote reveal">
-        <div class="stars">★★★★★</div>
-        <p>"A moment in my busy day to slow down and connect with myself and other mums in a creative way that felt nourishing and energising."</p>
-        <div class="who">Jo · BLW. Studio Workshop</div>
-      </div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Had a lovely time at Beth's Sculpt &amp; Wine class. She is such a warm, authentic host and teacher, and has created a really welcoming space where I felt I could truly exhale and unwind whilst getting my creative fix. Never thought I'd say it but I'm really quite proud of my little sculpture I got to take home. Thoroughly recommend."</p><div class="who">Emily · Sculpting &amp; Wine</div></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"The workshop felt very relaxing with a really nice atmosphere, nice to have drinks included, fun to try something new."</p><div class="who">Participant · Sculpting &amp; Wine</div></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"A moment in my busy day to slow down and connect with myself and other mums in a creative way that felt nourishing and energising."</p><div class="who">Jo · BLW. Studio Workshop</div></div>
     </div>
   </div>
 </section>
 
 <!-- VENUE -->
-<section class="venue" id="venue">
-  <div class="wrap">
-    <div class="cols">
-      <div class="reveal">
-        <div class="frame"><img class="bw" src="venue-door.jpg" alt="A glimpse through the door into Hello Josephine, tables set for a workshop"></div>
-      </div>
-      <div class="reveal">
-        <p class="eyebrow"><span class="idx">06</span> The details</p>
-        <h2 style="font-size:clamp(2.2rem,4.4vw,2.9rem);margin:.2em 0 .4em;font-weight:300">An evening at Hello Josephine<span class="dot-pink">.</span></h2>
-        <p class="lead">A warm, characterful spot in the heart of Beckenham, the perfect setting to make, sip and slow down.</p>
-        <ul>
-          <li><span>Venue</span><span>Hello Josephine, Beckenham</span></li>
-          <li><span>Next date</span><span>Thursday 22 October 2026</span></li>
-          <li><span>Time</span><span>7 to 9pm</span></li>
-          <li><span>Places</span><span>Limited to 20</span></li>
-          <li><span>Price</span><span>£49pp (+£1 booking fee)</span></li>
-          <li><span>Includes</span><span>All materials, guidance &amp; a glass of wine</span></li>
-          <li><span>Also coming</span><span>Christmas Special · Thu 19 Nov</span></li>
-        </ul>
-        <a href="https://buytickets.at/blwstudioltd/2418815" target="_blank" rel="noopener" class="btn big" style="margin-top:26px">Book your ticket</a>
-      </div>
+<section class="venue" id="details">
+  <div class="wrap"><div class="cols">
+    <div class="reveal"><div class="frame"><img class="bw" src="venue-josephine.jpg" alt="A glimpse through the door into Hello Josephine, tables set for a workshop"></div></div>
+    <div class="reveal">
+      <p class="eyebrow"><span class="idx">07</span> The details</p>
+      <h2 style="font-size:clamp(2.2rem,4.4vw,2.9rem);margin:.2em 0 .4em;font-weight:300">An evening at Hello Josephine<span class="dot-pink">.</span></h2>
+      <p class="lead">A warm, characterful spot in the heart of Beckenham, the perfect setting to make, sip and slow down.</p>
+      <ul>
+        <li><span>Workshop</span><span>Clay &amp; Calligraphy Christmas</span></li>
+        <li><span>Venue</span><span>Hello Josephine, Beckenham</span></li>
+        <li><span>Date</span><span>Thursday 19 November 2026</span></li>
+        <li><span>Time</span><span>7 to 9pm</span></li>
+        <li><span>Places</span><span>Limited to 20</span></li>
+        <li><span>Price</span><span>£59pp (+£1 booking fee)</span></li>
+        <li><span>Includes</span><span>Clay, calligraphy, materials, mulled wine &amp; mince pies</span></li>
+      </ul>
+      <a href="https://www.tickettailor.com/events/blwstudioltd/2482058" target="_blank" rel="noopener" class="btn big" style="margin-top:26px">Book your ticket</a>
     </div>
-  </div>
+  </div></div>
 </section>
 
-<!-- OVERSIZED TYPE MOMENT -->
-<section class="bigtype">
-  <div class="wrap">
-    <h2 class="giant reveal">Slow down<span class="dot-pink">.</span><br>Get <em>messy</em><span class="dot-pink">.</span><br>Make something<span class="dot-pink">.</span></h2>
-  </div>
-</section>
+<!-- STATEMENT -->
+<section class="bigtype"><div class="wrap">
+  <h2 class="giant reveal">Shape it<span class="dot-pink">.</span><br>Letter it<span class="dot-pink">.</span><br><em>Keep</em> it<span class="dot-pink">.</span></h2>
+</div></section>
 
-<!-- CTA BAND -->
-<section class="cta-band">
-  <div class="wrap reveal">
-    <h2>20 places. One quiet evening<span class="dot-pink">.</span></h2>
-    <p>Tickets for Thursday 22 October are bookable now through Ticket Tailor. We would love to see you there.</p>
-    <a href="https://buytickets.at/blwstudioltd/2418815" target="_blank" rel="noopener" class="btn big">Book your ticket</a>
-    <div class="scarcity">✦ Spaces are limited and our evenings fill quickly ✦</div>
-  </div>
-</section>
+<!-- CTA -->
+<section class="cta-band"><div class="wrap reveal">
+  <h2>20 places. One festive evening<span class="dot-pink">.</span></h2>
+  <p>Tickets for Thursday 19 November are bookable now through Ticket Tailor. We would love to see you there.</p>
+  <a href="https://www.tickettailor.com/events/blwstudioltd/2482058" target="_blank" rel="noopener" class="btn big pink">Book your ticket</a>
+  <div class="scarcity">✦ Spaces are limited and our evenings fill quickly ✦</div>
+</div></section>
 
 <!-- FAQ -->
-<section class="faq">
-  <div class="wrap">
-    <div class="section-head reveal" style="margin:0 auto;text-align:center">
-      <p class="eyebrow"><span class="idx">07</span> Good to know</p>
-      <h2>Questions, answered<span class="dot-pink">.</span></h2>
-    </div>
-    <div class="acc reveal">
-      <details open><summary>Do I need any experience?</summary><p>None at all. These evenings are designed for total beginners. I will guide you through every step, and there is no pressure to make anything "perfect". It is about the process, not the result.</p></details>
-      <details><summary>How do I book?</summary><p>All tickets are booked through Ticket Tailor, our secure booking partner. Just tap any "Book your ticket" button and it will take you straight there. When you book, we will add you to our mailing list so we can send you everything you need to know about the evening. You can unsubscribe at any time.</p></details>
-      <details><summary>What is included in the price?</summary><p>All your clay, tools and full guidance, plus a glass of wine to sip while you make. You just need to turn up.</p></details>
-      <details><summary>What will I make?</summary><p>On 22 October you will hand-build your own sculptural pumpkin, inspired by the bold, joyful, dotted forms of Yayoi Kusama. I will show you the techniques and you will make it your own.</p></details>
-      <details><summary>What is the Christmas Special?</summary><p>On Thursday 19 November we are running a festive evening that pairs clay with a calligraphy element, so you can make a hand-built piece for the tree as well as name cards for your table. Email hello@blwceramics.studio to be added to the mailing list.</p></details>
-      <details><summary>Do I take my piece home the same night?</summary><p>Yes. We use air-dry clay, so there is no kiln and no waiting. You will leave with your piece in hand the same evening.</p></details>
-      <details><summary>Can I come with friends?</summary><p>Absolutely, it is a lovely night out for a group. Just book your places together. Looking to book the whole evening privately? Get in touch.</p></details>
-      <details><summary>What if I cannot make it?</summary><p>Drop me a line as early as you can and I will do my best to help.</p></details>
-    </div>
+<section class="faq"><div class="wrap">
+  <div class="section-head reveal" style="margin:0 auto;text-align:center">
+    <p class="eyebrow"><span class="idx">08</span> Good to know</p>
+    <h2>Questions, answered<span class="dot-pink">.</span></h2>
   </div>
-</section>
+  <div class="acc reveal">
+    <details open><summary>Do I need any experience?</summary><p>None at all, in clay or calligraphy. These evenings are designed for total beginners. I will guide you through every step, and there is no pressure to make anything "perfect". It is about the process, not the result.</p></details>
+    <details><summary>What will I make?</summary><p>Two things to take home: a hand-built clay decoration for your tree, and your own place cards lettered by hand in calligraphy for the festive table.</p></details>
+    <details><summary>How do I book?</summary><p>Tickets are booked through Ticket Tailor, our secure booking partner. Just tap any "Book your ticket" button and it will take you straight there. When you book, we will add you to our mailing list so we can send you everything you need to know. You can unsubscribe at any time.</p></details>
+    <details><summary>What is included in the price?</summary><p>All your clay, tools, calligraphy materials and full guidance, plus mulled wine and mince pies. Everything you make goes home with you the same night. You just need to turn up.</p></details>
+    <details><summary>Do I take my pieces home the same night?</summary><p>Yes. We use air-dry clay, so there is no kiln and no waiting. You will leave with your decoration and your cards the same evening.</p></details>
+    <details><summary>What is the Muse event?</summary><p>Separately from our own evening, Beth is guiding the clay at "A Handmade Christmas", a festive ornament-making afternoon hosted by Muse on Saturday 28 November, 3 to 5pm at Hello Josephine (£45pp). It is booked through Muse, so please use the "Find out more" link for their details.</p></details>
+    <details><summary>Can I come with friends?</summary><p>Absolutely, it is a lovely night out for a group. Just book your places together. Looking to book the whole evening privately? Get in touch.</p></details>
+  </div>
+</div></section>
 
 <!-- BOOK -->
-<section class="signup" id="book">
-  <div class="wrap">
-    <div class="form-card reveal">
-      <h2>Ready to make something?</h2>
-      <p class="lead">Tickets for Thursday 22 October are booked securely through Ticket Tailor. Tap below to reserve your place.</p>
-      <a href="https://buytickets.at/blwstudioltd/2418815" target="_blank" rel="noopener" class="btn big" style="display:inline-block">Book your ticket</a>
-      <p class="formnote">Opens Ticket Tailor in a new tab. When you book, we will add you to our mailing list with everything you need to know. You can unsubscribe any time.</p>
-      <p style="margin-top:28px;padding-top:24px;border-top:1px solid var(--line);font-size:.95rem;color:var(--muted)">
-        More from the studio:
-        <a href="https://www.blwceramics.studio" target="_blank" rel="noopener" style="color:var(--plum);font-weight:400">blwceramics.studio</a>
-        &nbsp;·&nbsp;
-        <a href="https://www.instagram.com/blwceramics.studio" target="_blank" rel="noopener" style="color:var(--plum);font-weight:400">@blwceramics.studio</a>
-      </p>
-    </div>
+<section class="signup" id="book"><div class="wrap">
+  <div class="form-card reveal">
+    <h2>Ready to make something?</h2>
+    <p class="lead">Tickets for Clay &amp; Calligraphy Christmas on Thursday 19 November are booked securely through Ticket Tailor. Tap below to reserve your place.</p>
+    <a href="https://www.tickettailor.com/events/blwstudioltd/2482058" target="_blank" rel="noopener" class="btn big" style="display:inline-block">Book your ticket</a>
+    <p class="formnote">Opens Ticket Tailor in a new tab. When you book, we will add you to our mailing list with everything you need to know. You can unsubscribe any time.</p>
+    <p style="margin-top:28px;padding-top:24px;border-top:1px solid var(--line);font-size:.95rem;color:var(--muted)">
+      More from the studio:
+      <a href="https://www.blwceramics.studio" target="_blank" rel="noopener" style="color:var(--plum);font-weight:400">blwceramics.studio</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.instagram.com/blwceramics.studio" target="_blank" rel="noopener" style="color:var(--plum);font-weight:400">@blwceramics.studio</a>
+    </p>
   </div>
-</section>
+</div></section>
 
-<footer>
-  <div class="wrap">
-    <div class="logo">BLW<b>.</b> Studio</div>
-    <p>Mindful clay workshops in South East London, by ceramicist Beth Lloyd-Wright.</p>
-    <p><a href="https://www.instagram.com/blwceramics.studio" target="_blank" rel="noopener">@blwceramics.studio</a> &nbsp;·&nbsp; <a href="https://www.blwceramics.studio">blwceramics.studio</a></p>
-    <p style="margin-top:1em;opacity:.7">© 2026 Beth Lloyd-Wright Studio Ceramics</p>
-  </div>
-</footer>
+<footer><div class="wrap">
+  <div class="logo">BLW<b>.</b> Studio</div>
+  <p>Mindful clay workshops in South East London, by ceramicist Beth Lloyd-Wright.</p>
+  <p><a href="https://www.instagram.com/blwceramics.studio" target="_blank" rel="noopener">@blwceramics.studio</a> &nbsp;·&nbsp; <a href="https://www.blwceramics.studio">blwceramics.studio</a></p>
+  <p style="margin-top:1em;opacity:.7">© 2026 Beth Lloyd-Wright Studio Ceramics</p>
+</div></footer>
 
 <script>
   const io=new IntersectionObserver((entries)=>{
